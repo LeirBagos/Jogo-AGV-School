@@ -11,7 +11,7 @@ const obj = {
     },
 };
 
-const cubo= document.getElementById("Cubo")
+const Cubo= document.getElementById("Cubo")
 
 //Movimentando com o teclado
 
@@ -26,7 +26,7 @@ document.addEventListener("Keydown", function(event) {
     if (event.key === "a") x -= velocidade;
     if (event.key === "d") x += velocidade;
 
-    cubo.style.left = x + "px";
-    cubo.style.top = y + "px";
+    Cubo.style.left = x + "px";
+    Cubo.style.top = y + "px";
 
 });
