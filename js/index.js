@@ -16,8 +16,8 @@ const cubo = document.getElementById("cubo");
 
 let hspd = 0;
 let vspd = 0;
-let x = 0;
-let y = 0;
+let x = 200;
+let y = 200;
 const vel = 5;
 
 document.addEventListener('keydown', (e) => {
@@ -28,7 +28,7 @@ document.addEventListener('keydown', (e) => {
     const left = (e.key === 'a');
 
     hspd = (down - up) * vel;
-    vspd = (left - right) * vel;
+    vspd = (right - left) * vel;
 
     x += vspd;
     y += hspd;
