@@ -20,7 +20,7 @@ let x = 200;
 let y = 200;
 const vel = 5;
 
-document.addEventListener('Keydown', (e) => {
+document.addEventListener('keydown', (e) => {
 
     const up = (e.key === 'w');
     const down = (e.key === 's');
