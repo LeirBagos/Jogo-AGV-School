@@ -14,8 +14,8 @@ body{
 }
 
 #cubo{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: black;
     position: absolute;
     top: 200px;

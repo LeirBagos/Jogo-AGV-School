@@ -16,7 +16,7 @@ const cubo = document.getElementById("cubo");
 
 let hspd = 0;
 let vspd = 0;
-let x = 200;
+let x = 300;
 let y = 200;
 const vel = 10;
 
