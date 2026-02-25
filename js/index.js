@@ -27,11 +27,11 @@ document.addEventListener('keydown', (e) => {
     const right = (e.key === 'd');
     const left = (e.key === 'a');
 
-    hspd = (down - up) * vel;
-    vspd = (right - left) * vel;
+    vspd = (down - up) * vel;
+    hspd = (left - right) * vel;
 
-    x += vspd;
-    y += hspd;
+    x += hspd;
+    y += vspd;
 
     cubo.style.top = y +'px';
     cubo.style.left = x +'px';
