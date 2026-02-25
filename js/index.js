@@ -16,7 +16,7 @@ const cubo = document.getElementById("cubo");
 
 let hspd = 0;
 let vspd = 0;
-let x = 200;
+let x = 100;
 let y = 200;
 const vel = 10;
 
@@ -33,7 +33,7 @@ document.addEventListener('keydown', (e) => {
     x += hspd;
     y += vspd;
 
-    cubo.style.top = y +'px';
-    cubo.style.left = x +'px';
+    cubo.style.top = y + 'px';
+    cubo.style.left = x + 'px';
 
 });
