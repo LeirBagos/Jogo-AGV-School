@@ -34,6 +34,6 @@ document.addEventListener('keydown', (e) => {
     y += vspd;
 
     cubo.style.top = y +'px';
-    cubo.style.left = x +'px';
+    cubo.style.left = x -'px';
 
 });
