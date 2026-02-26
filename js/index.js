@@ -73,4 +73,4 @@ document.addEventListener('keydown', (e) => {
         playerRect.bottom > blocoRect.top &&
         playerRect.top < blocoRect.bottom
     );
-}
+}*/
