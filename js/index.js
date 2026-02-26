@@ -59,18 +59,18 @@ function checkCollision(newX, newY){
         bottom: newY + 40
     };
 
-    const wallRect = {
+    const blocoRect = {
 
-        left: wall.offsetleft,
-        right: wall.offsetleft + wall.offsetWidth,
-        top: wall.offsetTop,
-        bottom: wall.offsetTop + wall.offsetHeight
+        left: bloco.offsetleft,
+        right: bloco.offsetleft + bloco.offsetWidth,
+        top: bloco.offsetTop,
+        bottom: bloco.offsetTop + bloco.offsetHeight
     };
 
     return (
-        playerRect.right > wallRect.left &&
-        playerRect.left < wallRect.right &&
-        playerRect.bottom > wallRect.top &&
-        playerRect.top < wallRect.bottom
+        playerRect.right > blocoRect.left &&
+        playerRect.left < blocoRect.right &&
+        playerRect.bottom > blocoRect.top &&
+        playerRect.top < blocoRect.bottom
     );
 }
