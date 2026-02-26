@@ -25,8 +25,8 @@ const vel = 20;
 
 document.addEventListener('keydown', (e) => {
     
-    let newX = x;
-    let newY = y;
+    //let newX = x;
+    //let newY = y;
 
     const up = (e.key === 'w');
     const down = (e.key === 's');
@@ -39,18 +39,18 @@ document.addEventListener('keydown', (e) => {
     x += hspd;
     y += vspd;
 
-    if (!checkCollision(newX, newY)){
+    /*if (!checkCollision(newX, newY)){
 
         x = newX;
         y = newY;
-    };
+    };*/
 
     cubo.style.top = y + 'px';
     cubo.style.left = x + 'px';
 
 });
 
-function checkCollision(newX, newY){
+/*function checkCollision(newX, newY){
 
     const playerRect = {
         left: newX,
