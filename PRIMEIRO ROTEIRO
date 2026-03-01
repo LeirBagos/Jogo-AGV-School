@@ -1,0 +1,450 @@
+Título provisório
+
+[NOME PENDENTE] — trabalho: RPG semi-aberto escolar, ~45 minutos de jogo.
+
+Inspirações
+
+Estética de progresso e mapa: Pokémon FireRed
+
+Boss feel / combate souls-lite: Soul Knight
+
+Caos imprevisível / humor Zote: Zote
+
+Boss personalidade alvejada: Walter White
+
+Boss presença “barba branca”: Whitebeard
+
+
+
+---
+
+Elevator pitch (1 frase)
+
+Um RPG semi-aberto cínico ambientado na AGV onde você, um protagonista rápido e pragmático, cumpre missões escolares, enfrenta professores-bosses bizarros e desbloqueia finais alternativos — com cutscenes, piadas internas e escolhas que abrem rotas secretas.
+
+
+---
+
+Escopo & metas
+
+Duração alvo: ~45 minutos (single-session demo).
+
+Estilo: 2D pixel art, top-down / pseudo-isométrico (fire-red style).
+
+Plataformas sugeridas: Godot (se quiser engine “de verdade”) ou Love2D (Lua-friendly), build HTML+JS protótipo se for mais rápido.
+
+Prioridade do trimestre: entregável jogável (um boss por região + final + 3 side quests + 1 região secreta).
+
+
+
+---
+
+Core loop (o que jogador faz)
+
+1. Explorar mapa (quadra, informática, laboratório, parque).
+
+
+2. Pegar e cumprir missões (puzzle, stealth, escolha moral).
+
+
+3. Enfrentar encounters / bosses com mecânicas únicas.
+
+
+4. Desbloquear cutscenes e opções de saída da escola (final alternativo).
+
+
+5. Recolher conquistas e diálogos secretos.
+
+
+
+
+---
+
+Protagonista
+
+Sprite pronto. Gênero: masculino/neutro.
+
+Stats iniciais: Velocidade alta, Vida média, Dano baixo.
+
+Habilidades: nenhuma definida — foco em esquiva / mobilidade.
+
+Progressão: itens que aumentam vida / velocidade / munição de “gambiarras” (ex.: calculadora aprimorada, spray do químico).
+
+
+
+---
+
+Sistema de Progressão
+
+Vida (HP), Energia (para esquiva), Inventário curto (2 itens), Pequenas melhorias via missões (ex.: +10% velocidade, +1 slot de item).
+
+Reputação: sistema simples (Atitude: Rebelde / Neutro / Amigável) que altera diálogos e algumas rotas/ajudas (ex.: Lucas ajuda só se reputação neutra/alto respeito).
+
+
+
+---
+
+Regiões (mapa semi-aberto)
+
+Pátio central (nexus) — conecta tudo.
+
+Informática — puzzles baseados em lógica/eventos; lugar da primeira progressão para “hack”/quebra de ambiente.
+
+Laboratório — área do químico, puzzles de combinação, objetos inflamáveis.
+
+A Quadra — arena física, cover, obstáculos móveis.
+
+Parque — exploração, NPCs e side quests.
+
+Região Secreta — bloqueada por condição (ex.: terminar cutscene noturna + conquista) — conteúdo oculto/alternativo.
+
+
+
+---
+
+Missões & sistemas de escolha
+
+Tipos:
+
+Matar aula (stealth / rota rápida).
+
+Ajudar alguém (mendigo) (escolha moral, recompensa única).
+
+Não derrotar (rota pacifista — enganar/convencer bosses).
+
+Desafios de puzzle (uso de calculadora/fórmulas).
+
+
+Missões afetam: reputação, disponibilidade de Lucas/Gabriel para ajudar e final alternativo.
+
+Conquistas: várias (ex.: “Não Skippa” — ver conto do Pdav por 4 minutos; “Calculadora Inaceitável” — derrota do Muller sem usar a calculadora).
+
+
+
+---
+
+Sistema de diálogo
+
+Escolhas com consequências menores (afetam reputação e falas).
+
+Diálogos secretos / Easter eggs se ativar condições (ex.: falar com Lierbag após derrotar certo boss + ter status X).
+
+Gabriel (o artista) tem diálogo que zomba do jogador se criticar pixel art — trigger: comentar sobre arte de NPCs. (Piada interna.)
+
+
+
+---
+
+Bosses — lista ordenada e design (detalhado)
+
+> Observação: coloquei ordem sugerida com placeholders onde ficou vago.
+
+
+
+
+---
+
+1) Marcelo Figueiredo — Professor de Química (Boss inicial / tanque)
+
+Aparência: bulky, shorts de sarja, perfume forte, careca, barba grisalha.
+
+Comportamento: calmo, sábio, fala pausado.
+
+Mecânicas:
+
+Reações químicas no chão (zonas que envenenam/explodem após tempo).
+
+Lança projéteis “frascos” com efeitos (corrosão, fogo, gás).
+
+Fase 2: mistura de elementos cria parede de ácido que altera arena.
+
+
+Trigger: Interagir/alterar algo em laboratório (ex.: mexer em bancada proibida) ou completar puzzle que “desregula” experimento.
+
+Dificuldade: médio/alto vida, lento mas poderoso.
+
+Recompensa: item de reação (spray neutralizante) + conquista.
+
+
+
+---
+
+2) Professor de Lógica Computacional — (Zote-style, segundo boss)
+
+Aparência sugerida: corpulento, camisa polo, ar “padre” às vezes.
+
+Comportamento: imprevisível, usa memes, dá apelidos (“Chupeta”, “Xique Xique”).
+
+Mecânicas:
+
+Ataques randômicos (teleport, spams de projectiles “meme” que confundem controles).
+
+Quebra a expectativa: em certos momentos altera HUD (inverte tela, mensagens nonsense).
+
+Pode “invocar” pequenos glitches que mudam padrões de inimigos.
+
+
+Trigger: mexer em terminais de informática sem autorização / resolver puzzle com flag errada.
+
+Dificuldade: alto em imprevisibilidade; aprendizado por tentativa/erro.
+
+Recompensa: módulo “bugfix” que altera inimigos temporariamente.
+
+
+
+---
+
+3) Muller — Professor de Matemática (sniper & teleport)
+
+Aparência: alto, quadrado, tatuado, moicano antigo, usa óculos, roupas ajustadas. Tem dor de garganta.
+
+Comportamento: sarcasmo baixo, detesta interrupções, chama alunos de “crianças”, ama o meme “SABOOOOR energético”.
+
+Mecânicas:
+
+Cria armas/formulas: projéteis que parecem equações (linhas que seguem trajetória curva).
+
+Teleporta ao se aproximar (salto de posição) — jogador precisa lurar com puzzles/arming.
+
+Tem um gatilho que “anula” a calculadora do jogador (se usada, ele fica furioso e altera ataques).
+
+
+Trigger da luta: você resolve puzzle onde precisa usar calculadora — ele ODEIA calculadoras → inicia.
+
+Dificuldade: rápido, evasivo; segundo/terceiro boss.
+
+Recompensa: peça para completar puzzle + conquista do puzzle.
+
+
+
+---
+
+4) Gabriel (Chefão da Introdução a Computação / Banco de Dados) — Hack boss (penúltimo)
+
+Aparência: versão boss do Gabriel: baixinho, rechonchudo, correntinha, cara intensa.
+
+Comportamento: agressivo, hackeia sistemas, altera o mapa em tempo real.
+
+Mecânicas:
+
+“Hack” de terreno: desativa plataformas, cria novos inimigos, altera spawnpoints.
+
+Usa “long range” (vai de longe), invoca clones de dados (minions).
+
+Lucas (professor DB) pode intervir se jogador cumprir condições (seguir dicas, agir com lógica).
+
+
+Trigger: concluir uma cadeia de eventos em informática/lab que ativa “backup” do sistema escolar.
+
+Dificuldade: muito alto — penúltimo boss.
+
+Recompensa: chave para acesso à região secreta + item de restauração de chão (Lucas ajuda).
+
+
+
+---
+
+5) Adélio — Professor de Geografia (Boss final — Barba-Branca vibe)
+
+Aparência: careca, olhos azuis, barba curta, corpo musculoso, usa boné, Mizuno, tem problema na perna.
+
+Comportamento: gentil, calmo, brinca com “bater nos alunos”, narrador de rock (AC/DC fan).
+
+Mecânicas:
+
+Manipulação de terreno massiva (cria fissuras, elevações, tsunamis locais na quadra).
+
+Ataques em área gigantescos; move pedaços do mapa como se fosse stage hazard.
+
+Fase final: invoca “terremoto” que redesenha arena, testa posicionamento.
+
+
+Trigger: desbloqueia após derrotar Gabriel + cumprir condição moral (sair/entrar após cutscene)? (placeholder).
+
+Dificuldade: altíssima — boss final com alto HP e dano.
+
+Final Cutscene: Adélio reclama da perna e vai embora (moral ambígua).
+
+
+
+---
+
+Cutscenes & finais
+
+Cutscene noturna Pdav (conto de 4 minutos): se o jogador assistir sem skip → conquista e alternativa: consegue sair da escola (final alternativo).
+
+Cutscene estilo Gaara vs Rock Lee: boss geografia big moment — use para marcar boss final.
+
+Finais principais:
+
+Final padrão — derrota Adélio, escola continua, fama mediana.
+
+Final alternativo noturno — sair da escola após cutscene Pdav (revelação + conquista).
+
+Rota pacifista — evitar derrotar bosses (usar diálogos / puzzles) — desbloqueia ending secreto.
+
+Final troll/ruim — matar aula e abandonar; reputação cai, ganho de item duvidoso.
+
+
+
+
+---
+
+Design de combate (sugestão mecânica unificada)
+
+Top-down, esquiva com cooldown curto (dash).
+
+Colisões por hitbox simples.
+
+Projetiles com telegraph (windup) — mas bosses como Lógica podem quebrar telegraphs randômicos.
+
+Ambiente interativo: química cria zonas, geografia move o chão, Gabriel hacka o mapa.
+
+
+
+---
+
+Itens e consumíveis (exemplos)
+
+Spray neutralizante (cura envenenamento).
+
+Calculadora “modificada” (usa para puzzles; usar em combate causa efeitos aleatórios).
+
+Lanche energético (cura rápida).
+
+“Gambiarra” (item para alterar o mapa uma vez).
+
+
+
+---
+
+UI / HUD
+
+HP (barra), Energia (dash), Slot 1/2 itens, Minimapa (mostra regiões próximas), Indicador de reputação (pequeno ícone).
+
+Mensagens de status com tom sarcástico do professor de lógica (quando RNG trava).
+
+
+
+---
+
+Arte & som
+
+Pixel art 16–32 px sprites, tileset escolar/industrial, ou sei lá. Vocês definem.
+
+
+Música: Eu vou definir.
+
+Efeitos sonoros: campainha, passos, estalos de laboratório.
+
+
+
+---
+
+Regras de desenvolvimento / prioridades (MVP)
+
+1. Nível jogável: Pátio + Informática + Laboratório + 3 bosses (Química, Lógica, Matemática).
+
+
+2. Implementar core combat + dash + 2 itens.
+
+
+3. Cutscene Pdav + conquista vinculada.
+
+
+4. Região secreta bloqueada (placeholder).
+
+
+5. Polimento de diálogos + reputação.
+
+
+
+
+---
+
+Conteúdo a ser preenchido (placeholders)
+
+Nome do jogo.
+
+Nomes finais para certos NPCs (Professor de Lógica: nome real; Lucas já ok).
+
+Local exato do trigger da luta do químico.
+
+Design do puzzle que ativa Muller (matemática) — especificar lógica/formato.
+
+Sistema exato de reputação (valores e thresholds).
+
+Finalidade e mecânica exata da “região secreta”.
+
+
+
+---
+
+Ideias extras / Easter eggs (use quando sobrar tempo)
+
+Achievements “Crítico do Pixel” — faça piada com Gabriel se criticar sprites.
+
+Mini-game na quadra: futebol glitch (recompensa: item cosmético).
+
+NPC mendigo que é ex-professor — recompensa moral + dica de puzzle.
+
+“Professor fantasma” que aparece se você visitar escola às 03:00 do jogo (Easter).
+
+Modo New Game+ abre diálogos extras do Gabriel quebrando 4ª parede.
+
+
+
+---
+
+Legenda de símbolos e placeholders
+
+[PENDENTE] — campo que você decide depois (nome, localização exata, número).
+
+Trigger: — ação/condição que inicia evento/luta.
+
+Recompensa: — drop/achiev/ key que desbloqueia área.
+
+Fase 1 / Fase 2 — mudança de comportamento do boss conforme HP.
+
+Placeholder: — informação que falta (preencher depois com o grupo).
+
+
+
+---
+
+Roteiro condensado (sequência sugerida de 45 minutos)
+
+1. Intro rápido (2–3 min): tutorial pátio → entrar em informática.
+
+
+2. Pequeno puzzle na informática → confronto com Lógica (boss 1) (6–8 min).
+
+
+3. Lab: trigger químico (boss 2) (8–10 min).
+
+
+4. Puzzle central / Muller matemático (boss 3) (6–8 min).
+
+
+5. Penúltimo: Gabriel hack (boss 4) — Lucas auxilia se reputação OK (8–10 min).
+
+
+6. Final: Adélio (boss final) ou saída noturna alternativa (6–8 min).
+
+
+7. Cutscenes e conquistas espalhadas dentro do fluxo.
+
+
+
+
+---
+
+Comportamento social e flavour do jogo (texto de tom)
+
+Diálogos rápidos, piadas leves, referências internas.
+
+Humor ácido do protagonista — ele zomba com leve, mas conserva empatia.
+
+Professores têm voz: sábia, sarcástica, paternal-distante, etc.
+
+Gabriel (boss) tem frases que mudam conforme “arte” do jogador (brinca com pixel art).
