@@ -28,10 +28,10 @@ document.addEventListener('keydown', (e) => {
     //let newX = x;
     //let newY = y;
 
-    const up = (e.key === 'w');
-    const down = (e.key === 's');
-    const right = (e.key === 'd');
-    const left = (e.key === 'a');
+    let up = (e.key === 'w');
+    let down = (e.key === 's');
+    let right = (e.key === 'd');
+    let left = (e.key === 'a');
 
     vspd = (down - up) * vel;
     hspd = (right - left) * vel;
