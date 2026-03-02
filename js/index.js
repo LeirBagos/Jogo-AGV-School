@@ -47,6 +47,7 @@ document.addEventListener('keydown', (e) => {
 
     cubo.style.top = y + 'px';
     cubo.style.left = x + 'px';
+    cubo.style.top.left = (x + y /2) + "px"
 
 });
 
