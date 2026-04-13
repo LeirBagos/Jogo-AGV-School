@@ -1,0 +1,172 @@
+[gd_scene format=3 uid="uid://dfoeh4m51kchj"]
+
+[ext_resource type="Script" uid="uid://u7em75g5j1ee" path="res://character_body_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://bm3a0h83d58rj" path="res://sprites/pixil-frame-0_2.png" id="2_0hol4"]
+[ext_resource type="Texture2D" uid="uid://cctjwcnca7kc1" path="res://icon.svg" id="2_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y32ns"]
+size = Vector2(85, 115)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(125.30948, 139)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(8.071564, 2113)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(7.3667164, 2085)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
+size = Vector2(126.28264, 128)
+
+[node name="Node2D" type="Node2D" unique_id=1815505285]
+
+[node name="player" type="CharacterBody2D" parent="." unique_id=717987087]
+position = Vector2(531, 259)
+script = ExtResource("1_0e48y")
+metadata/_edit_group_ = true
+
+[node name="CollisionPlayer" type="CollisionShape2D" parent="player" unique_id=1893349890]
+position = Vector2(74.5, 65.5)
+shape = SubResource("RectangleShape2D_y32ns")
+
+[node name="SpritePlayer" type="Sprite2D" parent="player" unique_id=1061728696]
+position = Vector2(75.00003, 66)
+scale = Vector2(4.8800006, 4.8800006)
+texture = ExtResource("2_0hol4")
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1786662905]
+position = Vector2(75, 67)
+
+[node name="chão" type="CharacterBody2D" parent="." unique_id=1284572028]
+position = Vector2(1787, 1446)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="chão" type="Sprite2D" parent="chão" unique_id=1985402593]
+texture = ExtResource("2_epypp")
+
+[node name="a1" type="CollisionShape2D" parent="chão" unique_id=808910589]
+position = Vector2(-1.1735268, 3.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="chão2" type="CharacterBody2D" parent="." unique_id=901266456]
+position = Vector2(-376, 3544)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="chão" type="Sprite2D" parent="chão2" unique_id=711793691]
+texture = ExtResource("2_epypp")
+
+[node name="a1" type="CollisionShape2D" parent="chão2" unique_id=2035583569]
+position = Vector2(-1.1735268, 3.5)
+shape = SubResource("RectangleShape2D_0e48y")
+
+[node name="Parede" type="CharacterBody2D" parent="." unique_id=230086119]
+position = Vector2(1162, 1070)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="a2" type="CollisionShape2D" parent="Parede" unique_id=375287846]
+position = Vector2(62.454384, -582)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="Parede" type="Sprite2D" parent="Parede" unique_id=1315323409]
+position = Vector2(63.542053, -683)
+scale = Vector2(0.07430988, 15.72257)
+texture = ExtResource("2_epypp")
+
+[node name="Parede2" type="CharacterBody2D" parent="." unique_id=1502792883]
+position = Vector2(1095, 1210.5)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="a3" type="CollisionShape2D" parent="Parede2" unique_id=1182955398]
+position = Vector2(-65.08766, -689)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="parede2" type="Sprite2D" parent="Parede2" unique_id=719924271]
+position = Vector2(-65.11628, -513.5)
+scale = Vector2(0.055903398, 13.71875)
+texture = ExtResource("2_epypp")
+
+[node name="Parede3" type="CharacterBody2D" parent="." unique_id=1620426157]
+position = Vector2(-344, 3215)
+scale = Vector2(17.46875, 1)
+
+[node name="a2" type="CollisionShape2D" parent="Parede3" unique_id=257222487]
+position = Vector2(62.45438, -644.5)
+shape = SubResource("RectangleShape2D_epypp")
+metadata/_edit_group_ = true
+
+[node name="Parede" type="Sprite2D" parent="Parede3" unique_id=1380308097]
+position = Vector2(63.542053, -683)
+scale = Vector2(0.07430988, 15.72257)
+texture = ExtResource("2_epypp")
+
+[node name="Parede4" type="CharacterBody2D" parent="." unique_id=1467340181]
+position = Vector2(-2599, 3199)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="a2" type="CollisionShape2D" parent="Parede4" unique_id=339254719]
+position = Vector2(62.4544, -698)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="Parede" type="Sprite2D" parent="Parede4" unique_id=233499476]
+position = Vector2(63.542053, -683)
+scale = Vector2(0.07430988, 15.72257)
+texture = ExtResource("2_epypp")
+
+[node name="Parede5" type="CharacterBody2D" parent="." unique_id=1922330719]
+position = Vector2(-4629, 1232)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="a2" type="CollisionShape2D" parent="Parede5" unique_id=1837834612]
+position = Vector2(62.454384, -582)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="Parede" type="Sprite2D" parent="Parede5" unique_id=1838937712]
+position = Vector2(63.542053, -683)
+scale = Vector2(0.07430988, 15.72257)
+texture = ExtResource("2_epypp")
+
+[node name="teto" type="CharacterBody2D" parent="." unique_id=307798655]
+position = Vector2(1095, 1210.5)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="a3" type="CollisionShape2D" parent="teto" unique_id=1176846260]
+position = Vector2(-1.3166351, -1252.5)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="Teto" type="Sprite2D" parent="teto" unique_id=472217566]
+position = Vector2(-1.71735, -1254.5)
+texture = ExtResource("2_epypp")
+
+[node name="teto2" type="CharacterBody2D" parent="." unique_id=1793159777]
+position = Vector2(-2474, 2686)
+scale = Vector2(17.46875, 1)
+metadata/_edit_group_ = true
+
+[node name="a3" type="CollisionShape2D" parent="teto2" unique_id=1193225965]
+position = Vector2(-1.3166351, -1252.5)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="Teto" type="Sprite2D" parent="teto2" unique_id=1324741303]
+position = Vector2(-1.71735, -1254.5)
+texture = ExtResource("2_epypp")
+
+[node name="teto3" type="CharacterBody2D" parent="." unique_id=2062489672]
+position = Vector2(-2427, 883.99994)
+scale = Vector2(39.158314, 0.864578)
+metadata/_edit_group_ = true
+
+[node name="a3" type="CollisionShape2D" parent="teto3" unique_id=1343476170]
+position = Vector2(-1.3166351, -1252.5)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="Teto" type="Sprite2D" parent="teto3" unique_id=1681855083]
+position = Vector2(-1.71735, -1254.5)
+texture = ExtResource("2_epypp")
